@@ -35,7 +35,7 @@ export function ProtectedRoute(props) {
   if (localStorage.getItem("user")) {
     return <Route {...props} />;
   } else {
-    return <Redirect to="/Login" />;
+    return <Redirect to="/login" />;
   }
 }
 
