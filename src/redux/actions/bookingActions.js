@@ -5,7 +5,7 @@ import emailjs, { init } from "@emailjs/browser";
 
 const tempalteId = "template_m3mrs6r";
 const serviceId = "service_col3qlh";
-const BASE_URL = process.env.PUBLIC_URL || 'http://localhost:5000'
+const BASE_URL = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000'
 export const bookCar = (reqObj) => async (dispatch) => {
   dispatch({ type: "LOADING", payload: true });
   await axios

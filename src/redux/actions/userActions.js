@@ -1,6 +1,6 @@
 import axios from "axios";
 import { message } from "antd";
-const BASE_URL = process.env.PUBLIC_URL || 'http://localhost:5000'
+const BASE_URL = process.env.REACT_APP_PUBLIC_URL || 'http://localhost:5000'
 export const userLogin = (reqObj) => async (dispatch) => {
   dispatch({ type: "LOADING", payload: true });
   console.log("redux userLogin: ", reqObj);
