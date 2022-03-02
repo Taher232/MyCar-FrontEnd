@@ -43,3 +43,5 @@ export const userRegister = (reqObj) => async (dispatch) => {
     dispatch({ type: "LOADING", payload: false });
   }
 };
+ // Update
+ // update
