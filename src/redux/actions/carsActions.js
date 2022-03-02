@@ -73,3 +73,6 @@ export const deleteCar = (reqObj) => async (dispatch) => {
     dispatch({ type: "LOADING", payload: true });
   }
 };
+
+
+// update
