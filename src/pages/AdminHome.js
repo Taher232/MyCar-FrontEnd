@@ -72,7 +72,7 @@ function AdminHome() {
                 <img src={car.image} className="carimg" />
                 <div className="car-content d-flex align-items-center justify-content-between">
                   <div className="text left pl-2">
-                    <p>{car.Name}</p>
+                    <p>{car.name}</p>
                     <p> Rent Per hour{car.rentPerHour}/- </p>
                   </div>
 
