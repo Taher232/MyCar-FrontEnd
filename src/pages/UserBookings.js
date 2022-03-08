@@ -14,6 +14,7 @@ function UserBookings() {
   useEffect(() => {
     dispatch(getAllBookings());
   }, []);
+  console.log('bookings',bookings)
   return (
     <DefaultLayout>
       {loading && <Spinner />}
@@ -22,7 +23,6 @@ function UserBookings() {
       <Row justify="center" gutter={16}>
         <Col lg={16} sm={24}>
           {bookings
-            .filter((o) => o.user == user._id)
             .map((booking, index) => {
               return (
                 <Row key={index} className="bs1 m-2 text-left">
